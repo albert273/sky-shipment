@@ -60,6 +60,8 @@ export default function Navbar1() {
             anchorEl={anchorEl}
             open={open}
             onClose={handleClose}
+            sx={{zIndex: 20000000000000}}
+            
             MenuListProps={{
               "aria-labelledby": "basic-button",
             }}
