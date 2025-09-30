@@ -13,6 +13,7 @@ import seaFreight from "../../../public/aboutUs/card_01_home_04.jpg";
 import airFreight from "../../../public/aboutUs/card_02_home_04.jpg";
 import roadFreight from "../../../public/aboutUs/card_03_home_04.jpg";
 import railFreight from "../../../public/aboutUs/card_04_home_04.jpg";
+import Link from "next/link";
 
 const freightData: FreightCardProps[] = [
   {
@@ -131,25 +132,27 @@ export default function Map() {
                 >
                   {card.description}
                 </Typography>
-                <Button
-                  variant="outlined"
-                  sx={{
-                    color: "white",
-                    borderColor: "white",
-                    borderRadius: 5,
-                    textTransform: "none",
-                    fontWeight: 600,
-                    width: "100%",
-                    height: "50px",
-                    px: 3,
-                    "&:hover": {
-                      borderColor: "white",
-                      bgcolor: "rgba(255,255,255,0.1)",
-                    },
-                  }}
-                >
-                  Explore Solutions
-                </Button>
+                <Link href={"/services"}>
+          <Button
+            variant="outlined"
+            sx={{
+              color: "white",
+              borderColor: "white",
+              borderRadius: 5,
+              textTransform: "none",
+              fontWeight: 600,
+              width: "100%",
+              height: "50px",
+              px: 3,
+              "&:hover": {
+                borderColor: "white",
+                bgcolor: "rgba(255,255,255,0.1)",
+              },
+            }}
+          >
+            Explore Solutions
+          </Button>
+        </Link>
               </CardContent>
             </Card>
           ))}

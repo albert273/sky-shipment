@@ -6,6 +6,7 @@ import seaFreight from "../../../public/DriverType/card_image_01.avif";
 import airFreight from "../../../public/DriverType/card_image_02.avif";
 import roadFreight from "../../../public/DriverType/card_image_03.avif";
 import railFreight from "../../../public/DriverType/card_image_04.avif";
+import Link from "next/link";
 
 const freightData: FreightCardProps[] = [
   {
@@ -93,25 +94,27 @@ const FreightCard = ({ title, description, image }: FreightCardProps) => {
         >
           {description}
         </Typography>
-        <Button
-          variant="outlined"
-          sx={{
-            color: "white",
-            borderColor: "white",
-            borderRadius: 5,
-            textTransform: "none",
-            fontWeight: 600,
-            width: "100%",
-            height: "50px",
-            px: 3,
-            "&:hover": {
+        <Link href={"/services"}>
+          <Button
+            variant="outlined"
+            sx={{
+              color: "white",
               borderColor: "white",
-              bgcolor: "rgba(255,255,255,0.1)",
-            },
-          }}
-        >
-          Explore Solutions
-        </Button>
+              borderRadius: 5,
+              textTransform: "none",
+              fontWeight: 600,
+              width: "100%",
+              height: "50px",
+              px: 3,
+              "&:hover": {
+                borderColor: "white",
+                bgcolor: "rgba(255,255,255,0.1)",
+              },
+            }}
+          >
+            Explore Solutions
+          </Button>
+        </Link>
       </CardContent>
     </Card>
   );
