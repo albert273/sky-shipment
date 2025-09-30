@@ -79,54 +79,54 @@ export default function Navbar2() {
           <Typography sx={{ fontSize: ".8rem" }}>
             <strong>Call Us:</strong> 212-345-6798
           </Typography>
-          <Button
-            variant="contained"
-            sx={{
-              pr: 3,
-              pl: 0,
-              py: 1.5,
-              borderRadius: "50px",
-              fontSize: "1rem",
-              backgroundColor: "#0c1239e6",
-              color: "white",
-              fontWeight: "bold",
-              textTransform: "none",
-              overflow: "hidden",
-              position: "relative",
-              transition: "all 0.3s ease",
-              "&:hover": {
-                backgroundColor: "#fff",
-                color: "#0c1239e6",
-                pl: 3,
-                pr: 0,
-              },
-            }}
-            onMouseEnter={() => setHover(true)}
-            onMouseLeave={() => setHover(false)}
-          >
-            {/* Icon container */}
-            <Box
+          <Link href={"/quote"}>
+            <Button
+              variant="contained"
               sx={{
-                display: "flex",
-                alignItems: "center",
-                position: "absolute",
-                left: hover ? "5px" : "calc(100% - 45px)",
-                transition: "all 0.4s ease",
-                p: "8px",
-                borderRadius: "50%",
-                backgroundColor: hover ? "#0c1239e6" : "#0c1239e6",
-                color: hover ? "#fff" : "#fff",
-                justifyContent: "center",
+                pr: 3,
+                pl: 0,
+                py: 1.5,
+                borderRadius: "50px",
+                fontSize: "1rem",
+                backgroundColor: "#0c1239e6",
+                color: "white",
+                fontWeight: "bold",
+                textTransform: "none",
+                overflow: "hidden",
+                position: "relative",
+                transition: "all 0.3s ease",
+                "&:hover": {
+                  backgroundColor: "#fff",
+                  color: "#0c1239e6",
+                  pl: 3,
+                  pr: 0,
+                },
               }}
+              onMouseEnter={() => setHover(true)}
+              onMouseLeave={() => setHover(false)}
             >
-              <ArrowForwardIcon />
-            </Box>
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  position: "absolute",
+                  left: hover ? "5px" : "calc(100% - 45px)",
+                  transition: "all 0.4s ease",
+                  p: "8px",
+                  borderRadius: "50%",
+                  backgroundColor: hover ? "#0c1239e6" : "#0c1239e6",
+                  color: hover ? "#fff" : "#fff",
+                  justifyContent: "center",
+                }}
+              >
+                <ArrowForwardIcon />
+              </Box>
 
-            {/* Text stays centered */}
-            <Box component="span" sx={{ mx: 3 }}>
-              Get Quote
-            </Box>
-          </Button>
+              <Box component="span" sx={{ mx: 3 }}>
+                Get Quote
+              </Box>
+            </Button>
+          </Link>
         </Stack>
 
         {/* Mobile Menu Button */}
@@ -147,6 +147,7 @@ export default function Navbar2() {
         anchor="right"
         open={mobileOpen}
         onClose={() => setMobileOpen(false)}
+        sx={{ zIndex: 900000000000000 }}
       >
         <Box
           sx={{

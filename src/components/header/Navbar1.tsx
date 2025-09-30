@@ -94,12 +94,12 @@ export default function Navbar1() {
 
           <Stack direction="row" alignItems="center" gap={1}>
             <EmailIcon sx={{ color: "#0c1239e6", fontSize: "1.4rem" }} />
-            <Typography>Mail@Evanto.com</Typography>
+            <Typography>info@sky-shipment.com</Typography>
           </Stack>
 
           <Stack direction="row" alignItems="center" gap={1}>
             <LocationPinIcon sx={{ color: "#0c1239e6", fontSize: "1.4rem" }} />
-            <Typography>Cargo Hub, LD 32614, UK</Typography>
+            <Typography>4 sunrise building El SEfarat district nasr city </Typography>
           </Stack>
         </Stack>
 

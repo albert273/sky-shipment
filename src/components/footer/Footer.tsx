@@ -29,9 +29,9 @@ export default function Footer() {
               </Typography>
               <Typography sx={{ color: "white", fontSize: { xs: "1rem", md: "1.5rem" } }}>
                 212-345-6798 789 <br />
-                Oak Boulevard, Floor 5, New York
+                4 sunrise building El SEfarat district nasr city 
                 <br />
-                enquires@freyt.bt
+                info@sky-shipment.com
               </Typography>
             </Box>
             <Box sx={{ maxWidth: { xs: "100%", md: "600px" }, width: "100%" }}>
@@ -104,11 +104,11 @@ export default function Footer() {
                   Contact
                 </Typography>
                 <Typography>
-                  789 Oak Boulevard,
-                  <br /> Floor 5 New York, NY 10018
+                El SEfarat district nasr city ,
+                  <br /> 4 sunrise building 
                 </Typography>
                 <Typography>212-345-6798</Typography>
-                <Typography>enquires@freyt.bt</Typography>
+                <Typography>info@sky-shipment.com</Typography>
               </Box>
             </Stack>
           </Stack>
