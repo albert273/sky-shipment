@@ -28,7 +28,7 @@ export default function Footer() {
                 CONTACT US
               </Typography>
               <Typography sx={{ color: "white", fontSize: { xs: "1rem", md: "1.5rem" } }}>
-                212-345-6798 789 <br />
+                ********** <br />
                 4 sunrise building El SEfarat district nasr city 
                 <br />
                 info@sky-shipment.com

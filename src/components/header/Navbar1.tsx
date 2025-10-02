@@ -89,7 +89,7 @@ export default function Navbar1() {
           </Menu>
           <Stack direction="row" alignItems="center" gap={1}>
             <PhoneInTalkIcon sx={{ color: "#0c1239e6", fontSize: "1.4rem" }} />
-            <Typography>Phone +099 222 1111</Typography>
+            <Typography>Phone **********</Typography>
           </Stack>
 
           <Stack direction="row" alignItems="center" gap={1}>
